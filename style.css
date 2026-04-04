@@ -1,0 +1,125 @@
+/* 
+cor de fundo: #eaf6ff #d6ecff
+cor do texto: #6fbaff #4da3ff
+cor do footer:
+
+
+*/
+
+@font-face {
+    font-family: 'Nokia';
+    src: url('fontes/NokiaKokia.ttf') format(opentype);
+
+  
+}
+
+
+
+
+:root {
+    --cor0: #eaf6ff;
+    --cor1: #91c2ec;
+    --cor2: #6fbaff;
+    --cor3: #4da3ff;
+    --cor4: #72b3f8;
+    --cor5: #7cb7f7;
+    --fonte_nokia: 'Nokia', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient( to right, var(--cor0), var(--cor1));
+    font-family: var(--fonte_nokia);
+    overflow: scroll        ;
+}
+
+header {
+    background-color: var(--cor5);
+    padding: 40px;
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+    padding: 4px;
+    text-shadow: 1px 2px 2px rgb(149, 211, 228);
+    background: linear-gradient( to right, rgb(133, 210, 239), transparent);
+}
+
+header > p {
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+article {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    margin: 50px 99px;
+    display: flex; /* deixa na horizontal */
+    justify-content: center; /* centraliza os conteudos */
+    gap: 60px; /* da espaço entre imagens */
+    padding: 30px;
+    box-shadow: 1px 2px 5px rgb(59, 165, 182);
+}
+
+.card {
+    background-color: rgba(182, 232, 255, 0.573);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 1px 2px 4px black;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card > p {
+    padding: 5px;
+}
+
+.card:hover {
+    background-color: #8bbff0;
+    transform: translateY(-10px);
+}
+
+section {
+    background-color: rgba(105, 191, 238, 0.918);
+    padding: 10px;
+    justify-content: center;
+    margin: 50px 400px ;
+    max-width: 400;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+#secao1 h2 {
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor5));
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+#secao1 p {
+    margin: 10px;
+    
+}
+
+section:hover {
+    
+}
+
