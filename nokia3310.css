@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Nokia';
+    src: url('fontes/NokiaKokia.ttf') format(opentype);
+
+  
+}
+
+
+
+:root {
+    --cor0: #eaf6ff;
+    --cor1: #91c2ec;
+    --cor2: #6fbaff;
+    --cor3: #4da3ff;
+    --cor4: #72b3f8;
+    --cor5: #7cb7f7;
+    --fonte_nokia: 'Nokia', cursive;
+
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor5));
+}
+
+
+#icon {
+    margin-top: 150px;
+    margin-left: 20px;
+}
